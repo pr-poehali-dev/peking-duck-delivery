@@ -18,7 +18,14 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'source': ['Source Sans Pro', 'sans-serif'],
+			},
 			colors: {
+				'golden': '#F1B814',
+				'saddle': '#D2691E',
+				'chocolate': '#8B4513',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
