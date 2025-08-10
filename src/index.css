@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,20 +6,20 @@
 
 @layer base {
   :root {
-    --background: 45 25% 97%;
-    --foreground: 20 20% 15%;
+    --background: 35 15% 98%;
+    --foreground: 30 10% 20%;
 
-    --card: 45 25% 99%;
-    --card-foreground: 20 20% 15%;
+    --card: 35 15% 100%;
+    --card-foreground: 30 10% 20%;
 
-    --popover: 45 25% 99%;
-    --popover-foreground: 20 20% 15%;
+    --popover: 35 15% 100%;
+    --popover-foreground: 30 10% 20%;
 
-    --primary: 20 55% 35%;
-    --primary-foreground: 45 25% 97%;
+    --primary: 25 60% 30%;
+    --primary-foreground: 35 15% 98%;
 
-    --secondary: 40 60% 85%;
-    --secondary-foreground: 20 20% 15%;
+    --secondary: 30 20% 92%;
+    --secondary-foreground: 30 10% 20%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;

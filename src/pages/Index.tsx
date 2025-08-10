@@ -104,38 +104,41 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background font-source">
+    <div className="min-h-screen bg-background font-inter">
       {/* Header */}
-      <header className="border-b bg-card">
-        <div className="container mx-auto px-4 py-4">
+      <header className="bg-card/95 border-b border-border/10 backdrop-blur-lg sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="text-2xl font-playfair font-bold text-primary">Lucky Ducky</div>
+              <div className="text-3xl font-playfair font-bold text-primary tracking-wide">Lucky Ducky</div>
             </div>
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="#products" className="text-foreground hover:text-primary transition-colors">Утка по-пекински</a>
-              <a href="#accessories" className="text-foreground hover:text-primary transition-colors">Всё для утки</a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">О нас</a>
-              <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
-              <Button variant="default" size="sm">Заказать домой</Button>
+            <nav className="hidden md:flex items-center space-x-10">
+              <a href="#products" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm uppercase tracking-widest">Утка по-пекински</a>
+              <a href="#accessories" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm uppercase tracking-widest">Всё для утки</a>
+              <a href="#about" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm uppercase tracking-widest">О нас</a>
+              <a href="#contacts" className="text-foreground/70 hover:text-primary transition-all duration-300 font-medium text-sm uppercase tracking-widest">Контакты</a>
+              <Button variant="default" size="sm" className="rounded-full px-6 py-2 bg-primary hover:bg-primary/90 text-xs uppercase tracking-wider font-semibold">Заказать домой</Button>
             </nav>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-secondary/20 to-background">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-playfair font-bold text-primary mb-6">
-            Утка по-пекински для ресторанов и магазинов
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Настоящая утка по-пекински от Lucky Ducky. Высокое качество, проверенное долгосрочным партнёрством с лидерами ресторанного рынка Москвы и области.
-          </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg">
-            <Icon name="Phone" className="mr-2" size={20} />
-            ЗАКАЗАТЬ НА ПРОРАБОТКУ
-          </Button>
+      <section className="py-24 bg-gradient-to-b from-background to-secondary/5 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-6xl md:text-7xl font-playfair font-bold text-primary mb-8 leading-tight tracking-tight">
+              Утка по-пекински для ресторанов и магазинов
+            </h1>
+            <p className="text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+              Настоящая утка по-пекински от Lucky Ducky. Высокое качество, проверенное долгосрочным партнёрством с лидерами ресторанного рынка Москвы и области.
+            </p>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-base rounded-full font-semibold tracking-wide uppercase transition-all duration-300 hover:shadow-lg">
+              <Icon name="Phone" className="mr-3" size={20} />
+              ЗАКАЗАТЬ НА ПРОРАБОТКУ
+            </Button>
+          </div>
         </div>
       </section>
 

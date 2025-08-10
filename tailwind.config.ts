@@ -20,7 +20,8 @@ export default {
 		extend: {
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
-				'source': ['Source Sans Pro', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'sans': ['Inter', 'sans-serif'],
 			},
 			colors: {
 				'golden': '#F1B814',
